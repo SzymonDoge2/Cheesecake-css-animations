@@ -1,0 +1,34 @@
+html {
+    text-align:center;
+}
+
+p {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.sernik {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.sernik img{
+    margin-top: 10px;
+    width: 300px;
+    height: 300px;
+    rotate: 0deg;
+    border: 1px solid black;
+}
+
+@keyframes transform{
+    from{rotate:0deg;}
+    to{rotate:360deg;}
+}
+
+.sernik img:hover {
+    animation-name: transform;
+    animation-duration: 4s;
+}
