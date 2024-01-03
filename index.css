@@ -1,23 +1,37 @@
-@media screen and (max-width: 900px) {
-    .p {
-        font-size: 10px;
-    }
-}
-
 html {
     text-align:center;
     min-height: 100%;
+    width: 100%;
     background-image: linear-gradient(rgb(243, 12, 58), white);
 }
-
-
 
 p {
     font-size: 50px;
     margin-bottom: 10px;
 }
 
-.sernik {
+#lang-btn {
+    font-size: 20px;
+    margin-top: 15px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 7px;
+    background: pink;
+    cursor: pointer;
+}
+
+#lang-btn:hover {
+    background: rgb(229, 173, 183);
+}
+
+#text-container {
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: 10px auto;
+}
+
+#sernik {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -25,7 +39,7 @@ p {
     gap: 10px;
 }
 
-.sernik img{
+#sernik img{
     margin-top: 10px;
     width: 300px;
     height: 300px;
@@ -38,7 +52,7 @@ p {
     to{rotate:360deg;}
 }
 
-.sernik img:hover {
+#sernik img:hover {
     animation-name: transform;
     animation-duration: 4s;
 }

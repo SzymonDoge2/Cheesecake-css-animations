@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-
-    <title>Cheesecake css animation</title>
+        <!-- meta data😭😭 -->
+    <title lang="en">Cheesecake css animation</title>
     <meta charset="utf-8">
     <meta name="desciption" content="some css animations on cheesecake images">
     <meta name="keywords" content="css, code, animation, cheesecake">
@@ -12,12 +12,38 @@
     <link href="index.css" rel="stylesheet">
     </head>
     <body>
-        <h1><b>Kocham</b> sernik</h1>
-        <p>Sernik jest bardzo am am i dobry. Mwahahahaahhahaha</p>
-        <div class="sernik">
-            <img src="images/sernik.jpg">
-            <img src="images/sernik3.jpg">
-            <img src="images/sernik2.jpg">
+        <div lang="pl">
+            <h1 id="title">Kocham sernik</h1>
+            <div id="text-container">
+            <p id="par">Sernik jest bardzo am am i dobry. Mwahahahaahhahaha</p>
+            </div>
+            <div id="sernik">
+                <img src="images/sernik.jpg" alt="sernik/cold cheesecake with strawberries">
+                <img src="images/sernik3.jpg" alt="sernik/cold cheesecake with strawberries on a glass stand">
+                <img src="images/sernik2.jpg" alt="a single slice of sernik/cold cheesecake with strawberries">
+            </div>
+            <button id="lang-btn" onclick="switchLanguage()">
+                Change language<br>to <b>English</b>
+            </button>
         </div>
+        <script>
+            const title = document.getElementById("title");
+            const par = document.getElementById("par");
+            const langBtn = document.getElementById("lang-btn");
+            
+            function switchLanguage() {
+                if (langBtn.innerHTML == `Change language<br>to <b>English</b>`) {
+                    title.innerHTML = (`I love cheesecake`);
+                    par.innerHTML = (`Cheesecake is very nom nom and good. Mwahahahaahhahaha`);
+                    langBtn.innerHTML = (`Change language<br>to <b>Polish</b>`)
+                } else {
+                    title.innerHTML = (`Kocham sernik`);
+                    par.innerHTML = (`Sernik jest bardzo am am i dobry. Mwahahahaahhahaha`);
+                    langBtn.innerHTML = (`Change language<br>to <b>English</b>`)
+                }
+            };
+            
+            
+        </script>
     </body>
 </html>
